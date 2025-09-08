@@ -17,11 +17,13 @@ data/processed/*
 data/external/*
 !data/raw/Dataset_INE_Graduados_ESO_43698.csv
 
+
 # OS
 .DS_Store
 Thumbs.db
 
 # Reports
 !reports/informe_ejecutivo.pdf
+!reports/Informe_Ejecutivo_EDA_INE43698.pdf
 reports/*.html
 reports/figures/*.png
