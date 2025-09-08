@@ -1,0 +1,29 @@
+[project]
+name = "eda-graduados-eso-tic"
+version = "0.1.0"
+description = "EDA de Graduados en ESO según habilidades TIC (INE TPX 43698)"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Alumno/a", email = "example@example.com"}]
+license = {text = "MIT"}
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.25",
+    "matplotlib>=3.8",
+    "plotly>=5.20",
+    "folium>=0.16",
+    "geopandas>=0.14",
+    "shapely>=2.0",
+    "pyproj>=3.6",
+    "requests>=2.31",
+    "jupyterlab>=4.0",
+    "ipykernel>=6.29",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "black>=24.3",
+    "isort>=5.13",
+    "ruff>=0.5",
+    "pytest>=8.0",
+]

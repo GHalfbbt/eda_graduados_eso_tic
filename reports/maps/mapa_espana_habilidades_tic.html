@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2c33ba11059104f997268a3376a4afc6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2c33ba11059104f997268a3376a4afc6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2c33ba11059104f997268a3376a4afc6 = L.map(
+                "map_2c33ba11059104f997268a3376a4afc6",
+                {
+                    center: [40.0, -3.7],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5.7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_2c33ba11059104f997268a3376a4afc6);
+
+            
+
+        
+    
+            var tile_layer_002c0c8750040210e47ef9f00f086ba0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_002c0c8750040210e47ef9f00f086ba0.addTo(map_2c33ba11059104f997268a3376a4afc6);
+        
+    
+            var tile_layer_b9454226d07bb855105e30163414c119 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b9454226d07bb855105e30163414c119.addTo(map_2c33ba11059104f997268a3376a4afc6);
+        
+    
+            var feature_group_bafbee07444263ad10d6c98ad1ec05f8 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_502200cf058e9e4b021a8401869956cf = L.circleMarker(
+                [37.3886, -5.9823],
+                {"bubblingMouseEvents": true, "color": "#de2d26", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de2d26", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bafbee07444263ad10d6c98ad1ec05f8);
+        
+    
+        var popup_96527644d992b9114e6a60c893b3b01f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff83751432bd2f4bcaaecd2095f8b6b1 = $(`<div id="html_ff83751432bd2f4bcaaecd2095f8b6b1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 5px 0; color: #2E86C1;">Andalucía</h4>             <hr style="margin: 5px 0;">             <b>🎯 Usuario Experto:</b> 15.3%<br>             <b>📈 Usuario Avanzado:</b> 57.1%<br>             <b>📊 Usuario Básico:</b> 27.2%<br>             <b>❌ No Usuario:</b> 0.3%<br>             <hr style="margin: 5px 0;">             <b>🏆 Brecha Digital:</b> 27.4%         </div>         </div>`)[0];
+                popup_96527644d992b9114e6a60c893b3b01f.setContent(html_ff83751432bd2f4bcaaecd2095f8b6b1);
+            
+        
+
+        circle_marker_502200cf058e9e4b021a8401869956cf.bindPopup(popup_96527644d992b9114e6a60c893b3b01f)
+        ;
+
+        
+    
+    
+            circle_marker_502200cf058e9e4b021a8401869956cf.bindTooltip(
+                `<div>
+                     Andalucía: 15.3% experto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_986d82d6adfe7bc08809f1d865799ca1 = L.circleMarker(
+                [41.6488, -0.8891],
+                {"bubblingMouseEvents": true, "color": "#de2d26", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de2d26", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bafbee07444263ad10d6c98ad1ec05f8);
+        
+    
+        var popup_e9eb33d8b1ddcc0a5ea8d197af353f30 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_79e45ee1781d4deea1447b77e65578d8 = $(`<div id="html_79e45ee1781d4deea1447b77e65578d8" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 5px 0; color: #2E86C1;">Aragón</h4>             <hr style="margin: 5px 0;">             <b>🎯 Usuario Experto:</b> 14.8%<br>             <b>📈 Usuario Avanzado:</b> 63.6%<br>             <b>📊 Usuario Básico:</b> 20.3%<br>             <b>❌ No Usuario:</b> 0.0%<br>             <hr style="margin: 5px 0;">             <b>🏆 Brecha Digital:</b> 20.3%         </div>         </div>`)[0];
+                popup_e9eb33d8b1ddcc0a5ea8d197af353f30.setContent(html_79e45ee1781d4deea1447b77e65578d8);
+            
+        
+
+        circle_marker_986d82d6adfe7bc08809f1d865799ca1.bindPopup(popup_e9eb33d8b1ddcc0a5ea8d197af353f30)
+        ;
+
+        
+    
+    
+            circle_marker_986d82d6adfe7bc08809f1d865799ca1.bindTooltip(
+                `<div>
+                     Aragón: 14.8% experto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2738c24aeea51653d9c05c270e4baaf9 = L.circleMarker(
+                [40.0, -4.0],
+                {"bubblingMouseEvents": true, "color": "#de2d26", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de2d26", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bafbee07444263ad10d6c98ad1ec05f8);
+        
+    
+        var popup_fd02ee707d1f0f3d0e167c2dcc500137 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dad970feb1740c08b10956cb9634d3c6 = $(`<div id="html_dad970feb1740c08b10956cb9634d3c6" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 5px 0; color: #2E86C1;">Asturias, Principado de</h4>             <hr style="margin: 5px 0;">             <b>🎯 Usuario Experto:</b> 16.7%<br>             <b>📈 Usuario Avanzado:</b> 61.4%<br>             <b>📊 Usuario Básico:</b> 21.6%<br>             <b>❌ No Usuario:</b> 0.4%<br>             <hr style="margin: 5px 0;">             <b>🏆 Brecha Digital:</b> 22.0%         </div>         </div>`)[0];
+                popup_fd02ee707d1f0f3d0e167c2dcc500137.setContent(html_dad970feb1740c08b10956cb9634d3c6);
+            
+        
+
+        circle_marker_2738c24aeea51653d9c05c270e4baaf9.bindPopup(popup_fd02ee707d1f0f3d0e167c2dcc500137)
+        ;
+
+        
+    
+    
+            circle_marker_2738c24aeea51653d9c05c270e4baaf9.bindTooltip(
+                `<div>
+                     Asturias, Principado de: 16.7% experto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0a31b77507aa5c3970cdce8be96f0028 = L.circleMarker(
+                [40.0, -4.0],
+                {"bubblingMouseEvents": true, "color": "#de2d26", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de2d26", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bafbee07444263ad10d6c98ad1ec05f8);
+        
+    
+        var popup_8fd09a370d83a373b435efc7109c3934 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_797d197bdbe5dec4dca4f411ebf762d2 = $(`<div id="html_797d197bdbe5dec4dca4f411ebf762d2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 5px 0; color: #2E86C1;">Balears, Illes</h4>             <hr style="margin: 5px 0;">             <b>🎯 Usuario Experto:</b> 14.8%<br>             <b>📈 Usuario Avanzado:</b> 62.8%<br>             <b>📊 Usuario Básico:</b> 21.8%<br>             <b>❌ No Usuario:</b> 0.0%<br>             <hr style="margin: 5px 0;">             <b>🏆 Brecha Digital:</b> 21.8%         </div>         </div>`)[0];
+                popup_8fd09a370d83a373b435efc7109c3934.setContent(html_797d197bdbe5dec4dca4f411ebf762d2);
+            
+        
+
+        circle_marker_0a31b77507aa5c3970cdce8be96f0028.bindPopup(popup_8fd09a370d83a373b435efc7109c3934)
+        ;
+
+        
+    
+    
+            circle_marker_0a31b77507aa5c3970cdce8be96f0028.bindTooltip(
+                `<div>
+                     Balears, Illes: 14.8% experto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_286a40a1f28d836602837870764d7142 = L.circleMarker(
+                [28.2916, -16.6291],
+                {"bubblingMouseEvents": true, "color": "#de2d26", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de2d26", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bafbee07444263ad10d6c98ad1ec05f8);
+        
+    
+        var popup_0cba1e70b248d8f40054684cbea1368b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8f3c21a83aa46f98c1f01ee786727d6a = $(`<div id="html_8f3c21a83aa46f98c1f01ee786727d6a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 5px 0; color: #2E86C1;">Canarias</h4>             <hr style="margin: 5px 0;">             <b>🎯 Usuario Experto:</b> 13.4%<br>             <b>📈 Usuario Avanzado:</b> 59.7%<br>             <b>📊 Usuario Básico:</b> 26.9%<br>             <b>❌ No Usuario:</b> 0.0%<br>             <hr style="margin: 5px 0;">             <b>🏆 Brecha Digital:</b> 26.9%         </div>         </div>`)[0];
+                popup_0cba1e70b248d8f40054684cbea1368b.setContent(html_8f3c21a83aa46f98c1f01ee786727d6a);
+            
+        
+
+        circle_marker_286a40a1f28d836602837870764d7142.bindPopup(popup_0cba1e70b248d8f40054684cbea1368b)
+        ;
+
+        
+    
+    
+            circle_marker_286a40a1f28d836602837870764d7142.bindTooltip(
+                `<div>
+                     Canarias: 13.4% experto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2cb283739a221e2eb21e004ce5d59c8 = L.circleMarker(
+                [43.4623, -3.8099],
+                {"bubblingMouseEvents": true, "color": "#de2d26", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de2d26", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bafbee07444263ad10d6c98ad1ec05f8);
+        
+    
+        var popup_3d4d8775ce10d8b5e4aeb9f250830073 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_85f5f7edda9e38b970067a5cd5d62d60 = $(`<div id="html_85f5f7edda9e38b970067a5cd5d62d60" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 5px 0; color: #2E86C1;">Cantabria</h4>             <hr style="margin: 5px 0;">             <b>🎯 Usuario Experto:</b> 15.7%<br>             <b>📈 Usuario Avanzado:</b> 0.1%<br>             <b>📊 Usuario Básico:</b> 21.3%<br>             <b>❌ No Usuario:</b> 0.3%<br>             <hr style="margin: 5px 0;">             <b>🏆 Brecha Digital:</b> 21.6%         </div>         </div>`)[0];
+                popup_3d4d8775ce10d8b5e4aeb9f250830073.setContent(html_85f5f7edda9e38b970067a5cd5d62d60);
+            
+        
+
+        circle_marker_d2cb283739a221e2eb21e004ce5d59c8.bindPopup(popup_3d4d8775ce10d8b5e4aeb9f250830073)
+        ;
+
+        
+    
+    
+            circle_marker_d2cb283739a221e2eb21e004ce5d59c8.bindTooltip(
+                `<div>
+                     Cantabria: 15.7% experto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa25caf325778fb5067676aabfb2513c = L.circleMarker(
+                [40.0, -4.0],
+                {"bubblingMouseEvents": true, "color": "#de2d26", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de2d26", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bafbee07444263ad10d6c98ad1ec05f8);
+        
+    
+        var popup_5c6094349ccc83ced9d383ea9f9d523e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_586b22c35533b813e14d6e1653ba8751 = $(`<div id="html_586b22c35533b813e14d6e1653ba8751" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 5px 0; color: #2E86C1;">Castilla - La Mancha</h4>             <hr style="margin: 5px 0;">             <b>🎯 Usuario Experto:</b> 20.5%<br>             <b>📈 Usuario Avanzado:</b> 55.9%<br>             <b>📊 Usuario Básico:</b> 21.7%<br>             <b>❌ No Usuario:</b> 0.4%<br>             <hr style="margin: 5px 0;">             <b>🏆 Brecha Digital:</b> 22.1%         </div>         </div>`)[0];
+                popup_5c6094349ccc83ced9d383ea9f9d523e.setContent(html_586b22c35533b813e14d6e1653ba8751);
+            
+        
+
+        circle_marker_aa25caf325778fb5067676aabfb2513c.bindPopup(popup_5c6094349ccc83ced9d383ea9f9d523e)
+        ;
+
+        
+    
+    
+            circle_marker_aa25caf325778fb5067676aabfb2513c.bindTooltip(
+                `<div>
+                     Castilla - La Mancha: 20.5% experto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b238f6a795643d0b4df3b89cefa2cbac = L.circleMarker(
+                [41.6523, -4.7245],
+                {"bubblingMouseEvents": true, "color": "#de2d26", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de2d26", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bafbee07444263ad10d6c98ad1ec05f8);
+        
+    
+        var popup_667fbddd8b4e33ddcc599ebb40127681 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_24ef82e70c70e529b4f306fe5dd8a4fc = $(`<div id="html_24ef82e70c70e529b4f306fe5dd8a4fc" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 5px 0; color: #2E86C1;">Castilla y León</h4>             <hr style="margin: 5px 0;">             <b>🎯 Usuario Experto:</b> 16.3%<br>             <b>📈 Usuario Avanzado:</b> 64.9%<br>             <b>📊 Usuario Básico:</b> 18.6%<br>             <b>❌ No Usuario:</b> 0.2%<br>             <hr style="margin: 5px 0;">             <b>🏆 Brecha Digital:</b> 18.9%         </div>         </div>`)[0];
+                popup_667fbddd8b4e33ddcc599ebb40127681.setContent(html_24ef82e70c70e529b4f306fe5dd8a4fc);
+            
+        
+
+        circle_marker_b238f6a795643d0b4df3b89cefa2cbac.bindPopup(popup_667fbddd8b4e33ddcc599ebb40127681)
+        ;
+
+        
+    
+    
+            circle_marker_b238f6a795643d0b4df3b89cefa2cbac.bindTooltip(
+                `<div>
+                     Castilla y León: 16.3% experto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_30af63b69c47396b2c590da29a0b0eae = L.circleMarker(
+                [41.3851, 2.1734],
+                {"bubblingMouseEvents": true, "color": "#de2d26", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de2d26", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bafbee07444263ad10d6c98ad1ec05f8);
+        
+    
+        var popup_13a149b0f822d2311386d24e67b258a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e7612b5bad289dd42e313e2e032f1fe = $(`<div id="html_7e7612b5bad289dd42e313e2e032f1fe" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 5px 0; color: #2E86C1;">Cataluña</h4>             <hr style="margin: 5px 0;">             <b>🎯 Usuario Experto:</b> 20.1%<br>             <b>📈 Usuario Avanzado:</b> 64.4%<br>             <b>📊 Usuario Básico:</b> 14.8%<br>             <b>❌ No Usuario:</b> 0.5%<br>             <hr style="margin: 5px 0;">             <b>🏆 Brecha Digital:</b> 15.2%         </div>         </div>`)[0];
+                popup_13a149b0f822d2311386d24e67b258a7.setContent(html_7e7612b5bad289dd42e313e2e032f1fe);
+            
+        
+
+        circle_marker_30af63b69c47396b2c590da29a0b0eae.bindPopup(popup_13a149b0f822d2311386d24e67b258a7)
+        ;
+
+        
+    
+    
+            circle_marker_30af63b69c47396b2c590da29a0b0eae.bindTooltip(
+                `<div>
+                     Cataluña: 20.1% experto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9d6528620a930208f4c12d6e676e8a92 = L.circleMarker(
+                [35.8894, -5.3213],
+                {"bubblingMouseEvents": true, "color": "#de2d26", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de2d26", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bafbee07444263ad10d6c98ad1ec05f8);
+        
+    
+        var popup_aba656ecec1d68f8d9358f09624cb494 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a60c010c74cf67ffc68074ceb0d8a2b = $(`<div id="html_7a60c010c74cf67ffc68074ceb0d8a2b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 5px 0; color: #2E86C1;">Ceuta</h4>             <hr style="margin: 5px 0;">             <b>🎯 Usuario Experto:</b> 16.5%<br>             <b>📈 Usuario Avanzado:</b> 56.1%<br>             <b>📊 Usuario Básico:</b> 27.4%<br>             <b>❌ No Usuario:</b> 0.0%<br>             <hr style="margin: 5px 0;">             <b>🏆 Brecha Digital:</b> 27.4%         </div>         </div>`)[0];
+                popup_aba656ecec1d68f8d9358f09624cb494.setContent(html_7a60c010c74cf67ffc68074ceb0d8a2b);
+            
+        
+
+        circle_marker_9d6528620a930208f4c12d6e676e8a92.bindPopup(popup_aba656ecec1d68f8d9358f09624cb494)
+        ;
+
+        
+    
+    
+            circle_marker_9d6528620a930208f4c12d6e676e8a92.bindTooltip(
+                `<div>
+                     Ceuta: 16.5% experto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd96edf710ccf142404294c739060062 = L.circleMarker(
+                [39.484, -0.7532],
+                {"bubblingMouseEvents": true, "color": "#de2d26", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de2d26", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bafbee07444263ad10d6c98ad1ec05f8);
+        
+    
+        var popup_be635875cba8410324d6717381f96c56 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e1240e157a62b36ac08e1836bea9f8b3 = $(`<div id="html_e1240e157a62b36ac08e1836bea9f8b3" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 5px 0; color: #2E86C1;">Comunidad Valenciana</h4>             <hr style="margin: 5px 0;">             <b>🎯 Usuario Experto:</b> 14.1%<br>             <b>📈 Usuario Avanzado:</b> 63.6%<br>             <b>📊 Usuario Básico:</b> 21.7%<br>             <b>❌ No Usuario:</b> 0.0%<br>             <hr style="margin: 5px 0;">             <b>🏆 Brecha Digital:</b> 21.7%         </div>         </div>`)[0];
+                popup_be635875cba8410324d6717381f96c56.setContent(html_e1240e157a62b36ac08e1836bea9f8b3);
+            
+        
+
+        circle_marker_dd96edf710ccf142404294c739060062.bindPopup(popup_be635875cba8410324d6717381f96c56)
+        ;
+
+        
+    
+    
+            circle_marker_dd96edf710ccf142404294c739060062.bindTooltip(
+                `<div>
+                     Comunidad Valenciana: 14.1% experto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0c577269a7ae31522c41ca63a9fd4cb9 = L.circleMarker(
+                [39.1653, -6.3328],
+                {"bubblingMouseEvents": true, "color": "#de2d26", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de2d26", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bafbee07444263ad10d6c98ad1ec05f8);
+        
+    
+        var popup_1d0cb8518aabf446e92ee7aab1da513b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_41df6473de169f3e12cc9f612bc32d17 = $(`<div id="html_41df6473de169f3e12cc9f612bc32d17" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 5px 0; color: #2E86C1;">Extremadura</h4>             <hr style="margin: 5px 0;">             <b>🎯 Usuario Experto:</b> 13.5%<br>             <b>📈 Usuario Avanzado:</b> 62.0%<br>             <b>📊 Usuario Básico:</b> 24.4%<br>             <b>❌ No Usuario:</b> 0.1%<br>             <hr style="margin: 5px 0;">             <b>🏆 Brecha Digital:</b> 24.5%         </div>         </div>`)[0];
+                popup_1d0cb8518aabf446e92ee7aab1da513b.setContent(html_41df6473de169f3e12cc9f612bc32d17);
+            
+        
+
+        circle_marker_0c577269a7ae31522c41ca63a9fd4cb9.bindPopup(popup_1d0cb8518aabf446e92ee7aab1da513b)
+        ;
+
+        
+    
+    
+            circle_marker_0c577269a7ae31522c41ca63a9fd4cb9.bindTooltip(
+                `<div>
+                     Extremadura: 13.5% experto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a8b518e062242900fae4570feab68e4 = L.circleMarker(
+                [42.5751, -8.1339],
+                {"bubblingMouseEvents": true, "color": "#de2d26", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de2d26", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bafbee07444263ad10d6c98ad1ec05f8);
+        
+    
+        var popup_fe62dbea422a28b3f93009888e3472ad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_72377b6dc3412ee600edecf0a8c91e45 = $(`<div id="html_72377b6dc3412ee600edecf0a8c91e45" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 5px 0; color: #2E86C1;">Galicia</h4>             <hr style="margin: 5px 0;">             <b>🎯 Usuario Experto:</b> 17.3%<br>             <b>📈 Usuario Avanzado:</b> 61.3%<br>             <b>📊 Usuario Básico:</b> 21.1%<br>             <b>❌ No Usuario:</b> 0.0%<br>             <hr style="margin: 5px 0;">             <b>🏆 Brecha Digital:</b> 21.1%         </div>         </div>`)[0];
+                popup_fe62dbea422a28b3f93009888e3472ad.setContent(html_72377b6dc3412ee600edecf0a8c91e45);
+            
+        
+
+        circle_marker_4a8b518e062242900fae4570feab68e4.bindPopup(popup_fe62dbea422a28b3f93009888e3472ad)
+        ;
+
+        
+    
+    
+            circle_marker_4a8b518e062242900fae4570feab68e4.bindTooltip(
+                `<div>
+                     Galicia: 17.3% experto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1fdfa776ad3617b45534413ca094b11d = L.circleMarker(
+                [40.0, -4.0],
+                {"bubblingMouseEvents": true, "color": "#de2d26", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de2d26", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bafbee07444263ad10d6c98ad1ec05f8);
+        
+    
+        var popup_fd66df4de348f7d7ed4ddcd9bc3d1a5f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d50e69dc42a6de63e7eeb8db3d3c8d7 = $(`<div id="html_2d50e69dc42a6de63e7eeb8db3d3c8d7" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 5px 0; color: #2E86C1;">Madrid, Comunidad de</h4>             <hr style="margin: 5px 0;">             <b>🎯 Usuario Experto:</b> 17.7%<br>             <b>📈 Usuario Avanzado:</b> 63.3%<br>             <b>📊 Usuario Básico:</b> 18.6%<br>             <b>❌ No Usuario:</b> 0.0%<br>             <hr style="margin: 5px 0;">             <b>🏆 Brecha Digital:</b> 18.6%         </div>         </div>`)[0];
+                popup_fd66df4de348f7d7ed4ddcd9bc3d1a5f.setContent(html_2d50e69dc42a6de63e7eeb8db3d3c8d7);
+            
+        
+
+        circle_marker_1fdfa776ad3617b45534413ca094b11d.bindPopup(popup_fd66df4de348f7d7ed4ddcd9bc3d1a5f)
+        ;
+
+        
+    
+    
+            circle_marker_1fdfa776ad3617b45534413ca094b11d.bindTooltip(
+                `<div>
+                     Madrid, Comunidad de: 17.7% experto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4b03533589e846b0b446ac53683f938f = L.circleMarker(
+                [35.2923, -2.9381],
+                {"bubblingMouseEvents": true, "color": "#de2d26", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de2d26", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bafbee07444263ad10d6c98ad1ec05f8);
+        
+    
+        var popup_0d843d04111b800611b57ac7f7e78601 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b272b7591b2b29824ff7217523eaecd2 = $(`<div id="html_b272b7591b2b29824ff7217523eaecd2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 5px 0; color: #2E86C1;">Melilla</h4>             <hr style="margin: 5px 0;">             <b>🎯 Usuario Experto:</b> 17.8%<br>             <b>📈 Usuario Avanzado:</b> 51.5%<br>             <b>📊 Usuario Básico:</b> 28.2%<br>             <b>❌ No Usuario:</b> 0.0%<br>             <hr style="margin: 5px 0;">             <b>🏆 Brecha Digital:</b> 28.2%         </div>         </div>`)[0];
+                popup_0d843d04111b800611b57ac7f7e78601.setContent(html_b272b7591b2b29824ff7217523eaecd2);
+            
+        
+
+        circle_marker_4b03533589e846b0b446ac53683f938f.bindPopup(popup_0d843d04111b800611b57ac7f7e78601)
+        ;
+
+        
+    
+    
+            circle_marker_4b03533589e846b0b446ac53683f938f.bindTooltip(
+                `<div>
+                     Melilla: 17.8% experto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d48472d2079269b9989d83d93c00309b = L.circleMarker(
+                [40.0, -4.0],
+                {"bubblingMouseEvents": true, "color": "#de2d26", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de2d26", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bafbee07444263ad10d6c98ad1ec05f8);
+        
+    
+        var popup_0fd98a50bafe259bc1227473b4051c49 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_39bef45e8098205ef36e7a7ca26adc3a = $(`<div id="html_39bef45e8098205ef36e7a7ca26adc3a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 5px 0; color: #2E86C1;">Murcia, Región de</h4>             <hr style="margin: 5px 0;">             <b>🎯 Usuario Experto:</b> 15.9%<br>             <b>📈 Usuario Avanzado:</b> 66.2%<br>             <b>📊 Usuario Básico:</b> 17.4%<br>             <b>❌ No Usuario:</b> 0.5%<br>             <hr style="margin: 5px 0;">             <b>🏆 Brecha Digital:</b> 17.9%         </div>         </div>`)[0];
+                popup_0fd98a50bafe259bc1227473b4051c49.setContent(html_39bef45e8098205ef36e7a7ca26adc3a);
+            
+        
+
+        circle_marker_d48472d2079269b9989d83d93c00309b.bindPopup(popup_0fd98a50bafe259bc1227473b4051c49)
+        ;
+
+        
+    
+    
+            circle_marker_d48472d2079269b9989d83d93c00309b.bindTooltip(
+                `<div>
+                     Murcia, Región de: 15.9% experto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_41c5ff3bafe83a1a11005b7f6ea3ccea = L.circleMarker(
+                [40.0, -4.0],
+                {"bubblingMouseEvents": true, "color": "#de2d26", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de2d26", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bafbee07444263ad10d6c98ad1ec05f8);
+        
+    
+        var popup_dd8d068dbb473e9b4a218ca80c71b75e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_85a8b3ac809dc1774c430600e4450e64 = $(`<div id="html_85a8b3ac809dc1774c430600e4450e64" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 5px 0; color: #2E86C1;">Navarra, Comunidad Foral de</h4>             <hr style="margin: 5px 0;">             <b>🎯 Usuario Experto:</b> 12.2%<br>             <b>📈 Usuario Avanzado:</b> 0.1%<br>             <b>📊 Usuario Básico:</b> 18.6%<br>             <b>❌ No Usuario:</b> 0.3%<br>             <hr style="margin: 5px 0;">             <b>🏆 Brecha Digital:</b> 18.9%         </div>         </div>`)[0];
+                popup_dd8d068dbb473e9b4a218ca80c71b75e.setContent(html_85a8b3ac809dc1774c430600e4450e64);
+            
+        
+
+        circle_marker_41c5ff3bafe83a1a11005b7f6ea3ccea.bindPopup(popup_dd8d068dbb473e9b4a218ca80c71b75e)
+        ;
+
+        
+    
+    
+            circle_marker_41c5ff3bafe83a1a11005b7f6ea3ccea.bindTooltip(
+                `<div>
+                     Navarra, Comunidad Foral de: 12.2% experto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9ab60eddb9682b58cae841c12d99aff4 = L.circleMarker(
+                [43.3183, -2.9756],
+                {"bubblingMouseEvents": true, "color": "#de2d26", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de2d26", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bafbee07444263ad10d6c98ad1ec05f8);
+        
+    
+        var popup_5c01de2e381b309d45fba29cdb9a431a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_712fc1283cd42f64153f969ce8e183bc = $(`<div id="html_712fc1283cd42f64153f969ce8e183bc" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 5px 0; color: #2E86C1;">País Vasco</h4>             <hr style="margin: 5px 0;">             <b>🎯 Usuario Experto:</b> 14.3%<br>             <b>📈 Usuario Avanzado:</b> 70.5%<br>             <b>📊 Usuario Básico:</b> 14.9%<br>             <b>❌ No Usuario:</b> 0.0%<br>             <hr style="margin: 5px 0;">             <b>🏆 Brecha Digital:</b> 14.9%         </div>         </div>`)[0];
+                popup_5c01de2e381b309d45fba29cdb9a431a.setContent(html_712fc1283cd42f64153f969ce8e183bc);
+            
+        
+
+        circle_marker_9ab60eddb9682b58cae841c12d99aff4.bindPopup(popup_5c01de2e381b309d45fba29cdb9a431a)
+        ;
+
+        
+    
+    
+            circle_marker_9ab60eddb9682b58cae841c12d99aff4.bindTooltip(
+                `<div>
+                     País Vasco: 14.3% experto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_33cc496875c99a3da6bfde3d48536335 = L.circleMarker(
+                [40.0, -4.0],
+                {"bubblingMouseEvents": true, "color": "#de2d26", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de2d26", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_bafbee07444263ad10d6c98ad1ec05f8);
+        
+    
+        var popup_86a4bff0221d325591951478e4cf0be3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1bbcbf2c8c100c64b0f72bbf7ba14815 = $(`<div id="html_1bbcbf2c8c100c64b0f72bbf7ba14815" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 5px 0; color: #2E86C1;">Rioja, La</h4>             <hr style="margin: 5px 0;">             <b>🎯 Usuario Experto:</b> 18.6%<br>             <b>📈 Usuario Avanzado:</b> 0.0%<br>             <b>📊 Usuario Básico:</b> 24.1%<br>             <b>❌ No Usuario:</b> 0.0%<br>             <hr style="margin: 5px 0;">             <b>🏆 Brecha Digital:</b> 24.1%         </div>         </div>`)[0];
+                popup_86a4bff0221d325591951478e4cf0be3.setContent(html_1bbcbf2c8c100c64b0f72bbf7ba14815);
+            
+        
+
+        circle_marker_33cc496875c99a3da6bfde3d48536335.bindPopup(popup_86a4bff0221d325591951478e4cf0be3)
+        ;
+
+        
+    
+    
+            circle_marker_33cc496875c99a3da6bfde3d48536335.bindTooltip(
+                `<div>
+                     Rioja, La: 18.6% experto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_bafbee07444263ad10d6c98ad1ec05f8.addTo(map_2c33ba11059104f997268a3376a4afc6);
+        
+    
+            var layer_control_b0ebae76c6cd142ca86c96c9317e00bb_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_002c0c8750040210e47ef9f00f086ba0,
+                    "CartoDB Positron" : tile_layer_b9454226d07bb855105e30163414c119,
+                },
+                overlays :  {
+                    "Marcadores (popups)" : feature_group_bafbee07444263ad10d6c98ad1ec05f8,
+                },
+            };
+            let layer_control_b0ebae76c6cd142ca86c96c9317e00bb = L.control.layers(
+                layer_control_b0ebae76c6cd142ca86c96c9317e00bb_layers.base_layers,
+                layer_control_b0ebae76c6cd142ca86c96c9317e00bb_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_2c33ba11059104f997268a3376a4afc6);
+
+        
+</script>
+</html>

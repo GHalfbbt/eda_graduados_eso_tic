@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints/
+.notebook_cache/
+notebooks/.ipynb_checkpoints/
+
+# Virtual envs
+.venv/
+.uv/
+
+# Data
+data/processed/*
+data/external/*
+!data/raw/Dataset_INE_Graduados_ESO_43698.csv
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Reports
+!reports/informe_ejecutivo.pdf
+reports/*.html
+reports/figures/*.png
