@@ -206,7 +206,7 @@ eda_graduados_eso_tic/
 ├─ requirements.txt             # (si usas pip)
 └─ README.md
 ```
-
+---
 **.gitignore** sugerido:
 ```
 .venv/
