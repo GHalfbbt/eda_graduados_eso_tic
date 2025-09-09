@@ -99,7 +99,7 @@ uv sync
 > Si **no** existe `pyproject.toml` y quieres crearlo con uv:
 > ```bash
 > uv init --name eda_graduados_eso_tic
-> uv add pandas matplotlib seaborn scipy scikit-learn jupyterlab ipykernel kaggle
+> uv add pandas matplotlib seaborn scipy scikit-learn jupyterlab ipykernel 
 > uv sync
 > ```
 
