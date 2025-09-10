@@ -2,28 +2,79 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyo
+*.pyd
+*.egg-info/
+.dist-info/
+build/
+dist/
 
-# Jupyter
-.ipynb_checkpoints/
-.notebook_cache/
-notebooks/.ipynb_checkpoints/
 
-# Virtual envs
+# --- Python / Virtual entornos ---
 .venv/
 .uv/
 
-# Data
-data/processed/*
-data/external/*
-!data/raw/Dataset_INE_Graduados_ESO_43698.csv
-
-
-# OS
+# --- Jupyter / VSCode / OS ---
+.ipynb_checkpoints/
+.notebook_cache/
+notebooks/.ipynb_checkpoints/
+.vscode/
 .DS_Store
 Thumbs.db
 
-# Reports
-!reports/informe_ejecutivo.pdf
+# -------- Data --------
+# Ignora todo lo generado y externo
+data/processed/**
+data/external/**
+
+
+# Mantener sólo el CSV origina del INE (ajusta si usas otro nombre)
+!data/raw/
+data/raw/**
+!data/raw/Dataset_INE_Graduados_ESO_43698.csv
+
+# mantener directorios vacíos con .gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+
+# -------- Reports (generados)--------
+# Ignora todo en reports por defecto..
+reports/**
+# ...pero permite el informe ejecutivo y su versión en Markdown
+!reports/
+!reports/executive_report.pdf
+!reports/executive_report.md
 !reports/Informe_Ejecutivo_EDA_INE43698.pdf
-reports/*.html
-reports/figures/*.png
+# ...y los directorios de tablas, figuras, mapas y plotly
+!reports/tables/.gitkeep
+!reports/figures/.gitkeep
+!reports/maps/.gitkeep
+!reports/plotly/.gitkeep
+!reports/quality/.gitkeep
+reports/notebooks/**
+
+# Mantenemos fuera los artefactos pesados/volátiles
+reports/figures/**
+reports/maps/**
+reports/plotly/**
+reports/tables/**
+reports/notebooks/**
+reports/quality/**
+
+# -------- Notebooks --------
+notebooks/**
+!notebooks/
+!notebooks/eda_graduados_eso_tic.ipynb
+
+# -------- Scripts --------
+scripts/**
+!scripts/
+!scripts/.gitkeep
+
+# -------- Src --------
+src/**/__pycache__/
+
+# --- Logs / temporales ---
+*.log
+*.tmp
+*.cache/
