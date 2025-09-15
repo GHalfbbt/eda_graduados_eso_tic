@@ -1,7 +1,4 @@
-from __future__ import annotations
-import pandas as pd
 from pathlib import Path
-from eda_eso_tic.paths import RAW_FILE, CLEAN_FILE, PROCESSED_DIR
 from eda_eso_tic.data_utils import load_raw, clean_ine_43698
 
 def main():
